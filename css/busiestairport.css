@@ -1,14 +1,20 @@
 
 h1 {
   font-family: 'Barlow Condensed';
-  font-weight: 600px;
   text-align: center;
   color: #77604eff;
+  margin-top: 40px;
 }
 
+p.description {
+  font-family: 'Barlow Condensed';
+  text-align: center;
+  color: #77604eff;
+  margin-top:-10px;
+  opacity: 0.5;
+}
 
 .how{
-  margin-top:10%;
   margin-left:20px;
 }
 .why{
@@ -124,4 +130,9 @@ font-family: 'Barlow Condensed';
 margin-top:5px;
 margin-left: 10px;
 padding-right:40%;
+}
+
+iframe {
+  position:absolute;
+  
 }
