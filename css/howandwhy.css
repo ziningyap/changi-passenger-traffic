@@ -4,22 +4,22 @@ body{
 .dropdownHow {
   position: absolute;
   display: inline-block;
+  margin-left:25%;
 }
 
 .howbutton {
   background-color: #77604eff;
   color: white;
-  height:300px;
-  width:300px;
+  height:350px;
+  width:350px;
   padding-left:15%;
   padding-right:15%;
   text-align:center;
-  margin-left:130%;
   margin-top:50%;
   border-radius:50%;
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Barlow Condensed';
-  font-weight: 600px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   transition: 0.5s;
@@ -28,12 +28,12 @@ body{
 
 .how-content {
   display: none;
-  margin-top:-250px;
-  margin-right:-100px;
-  position: relative;
+  margin-top:-280px;
+  left:-400px;
+  position: absolute;
   font-family: 'Barlow Condensed';
   font-size:18px;
-  min-width: 100px;
+  min-width: 400px;
   padding:0px;
   text-align:right;
   transition: 0.5s;
@@ -60,17 +60,16 @@ body{
 .whybutton {
   background-color: #93278fff;
   color: white;
-  height:300px;
-  width:300px;
+  height:350px;
+  width:350px;
   padding-left:15%;
   padding-right:15%;
   text-align:center;
   margin-top:50%;
-  margin-left:250%;
   border-radius:50%;
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Barlow Condensed';
-  font-weight: 600px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   transition: 0.5s;
@@ -78,25 +77,25 @@ body{
 
 .dropdownWhy {
   position: absolute;
-  display: inline-block;
+  display: inline;
+  margin-left:50%;
 }
 
 .why-content {
   display: none;
-  margin-top:-260px;
-  margin-left:350%;
+  margin-top:220px;
+  margin-left:5%;
   position: absolute;
   font-family: 'Barlow Condensed';
   font-size:18px;
   min-width: 400px;
   text-align:left;
   transition: 0.5s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .why-content a {
   color: white;
-  padding: 20px 30px;
+  padding: 20px 20px;
   text-decoration: none;
   display: inline-block;
 }
@@ -104,7 +103,7 @@ body{
 .why-content a:hover {color: #c979c6ff;}
 
 .dropdownWhy:hover .why-content {
-  display: inline-block;
+  display: inline;
 }
 
 .dropdownWhy:hover .whybutton {
