@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.yearHeader{
+color: white;
+background-color:#93278fff;
+position: absolute;
+font-size:22px;
+border: none;
+font-family: 'Barlow Condensed';
+padding: 5px 20px;
+display: inline-block;
+margin: 20px 430px;
+letter-spacing:2px;
+}
+
+.year{
+color: #b751b5ff;
+background-color:white;
+position: relative;
+font-size:20px;
+border: none;
+font-family: 'Barlow Condensed';
+padding: 10px 35px;
+display: inline-block;
+}
+
+.year:hover{
+  color:#93278fff;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 25px;
+  margin-left: 950px;
+  color:#93278fff;
+  font-weight: bold;
+  font-size: 80px;
+  border-radius: 6px 0 0 6px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="mySlides">
+    <div class = "yearHeader">2010</div>
+    <img src="https://i.ibb.co/y5m9rp6/2010.png" style="width:1000px; margin-top:50px;">
+  </div>
+
+  <div class="mySlides">
+    <div class = "yearHeader">2011</div>
+    <img src="https://i.ibb.co/Mp7rWtN/2011.png" style="width:1000px; margin-top:50px;">
+  </div>
+
+  <div class="mySlides">
+    <div class = "yearHeader">2012</div>
+    <img src="https://i.ibb.co/Bjpc63w/2012.png" style="width:1000px; margin-top:50px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class = "yearHeader">2013</div>
+    <img src="https://i.ibb.co/X28Ym51/2013.png" style="width:1000px; margin-top:50px;">
+  </div>
+
+  <div class="mySlides">
+    <div class = "yearHeader">2014</div>
+    <img src="https://i.ibb.co/B404LSM/2014.png" style="width:1000px; margin-top:50px;">
+  </div>
+    
+  <div class="mySlides">
+    <div class = "yearHeader">2015</div>
+    <img src="https://i.ibb.co/17bWV5w/2015.png" style="width:1000px; margin-top:50px;">
+  </div>
+  
+  <div class="mySlides">
+    <div class = "yearHeader">2016</div>
+    <img src="https://i.ibb.co/Sm2jBtQ/2016.png" style="width:1000px; margin-top:50px;">
+  </div>
+  
+  <div class="mySlides">
+    <div class = "yearHeader">2017</div>
+    <img src="https://i.ibb.co/MggpyBG/2017.png" style="width:1000px; margin-top:50px;">
+  </div>
+  
+  <div class="mySlides">
+    <div class = "yearHeader">2018</div>
+    <img src="https://i.ibb.co/D5wpyFB/2018.png
+" style="width:1000px; margin-top:50px;">
+    
+  </div>
+    
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+<div class="buttons">
+<button class = "year" onclick="currentSlide(1)">2010</button>
+<button class = "year" onclick="currentSlide(2)">2011</button>
+<button class = "year" onclick="currentSlide(3)">2012</button>
+<button class = "year" onclick="currentSlide(4)">2013</button>
+<button class = "year" onclick="currentSlide(5)">2014</button>
+<button class = "year" onclick="currentSlide(6)">2015</button>
+<button class = "year" onclick="currentSlide(7)">2016</button>
+<button class = "year" onclick="currentSlide(8)">2017</button>
+<button class = "year" onclick="currentSlide(9)">2018</button>
+<div>
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+</body>
