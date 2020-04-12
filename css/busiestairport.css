@@ -1,16 +1,17 @@
 
 h1 {
   font-family: 'Barlow Condensed';
-  text-align: center;
+  text-align: left;
   color: #77604eff;
-  margin-top: 40px;
+  margin-left:20%;
 }
 
 p.description {
   font-family: 'Barlow Condensed';
-  text-align: center;
+  text-align: left;
   color: #77604eff;
   margin-top:-10px;
+  margin-left:20%;
   opacity: 0.5;
 }
 
