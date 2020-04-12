@@ -147,3 +147,10 @@ iframe {
   position:absolute;
   
 }
+
+.tableauPlaceholder {
+  border: none; 
+  position: absolute; 
+  margin-left:19%; 
+  margin-top:-380px;
+}
