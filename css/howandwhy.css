@@ -15,7 +15,7 @@ body{
   padding-left:15%;
   padding-right:15%;
   text-align:center;
-  margin-top:50%;
+  margin-top:60%;
   border-radius:50%;
   font-size: 26px;
   font-family: 'Barlow Condensed';
@@ -32,19 +32,52 @@ body{
   left:-400px;
   position: absolute;
   font-family: 'Barlow Condensed';
-  font-size:18px;
+  font-size:22px;
   min-width: 400px;
   padding:0px;
   text-align:right;
   transition: 0.5s;
 }
 
-.how-content a {
+.how1, .how2, .how3 {
+  width:220px;
+  height:220px;
+  padding:25px;
   color: white;
-  padding: 20px 20px;
+  background-color: transparent;
+  border-radius:50%;
   text-decoration: none;
   display: block;
+  border: none;
+  font-family: 'Barlow Condensed';
+  font-size: 22px;
+  text-align: center;
+  line-height:25px;
+  cursor: pointer;
 }
+
+.how1:hover, .how2:hover, .how3:hover {
+  background-color:#77604eff;
+    #a2836bff;
+}
+  
+.how1{
+  position:absolute;
+  margin-top: -220px;
+  margin-left:65%;
+}
+
+.how2{
+  position:absolute;
+  margin-left:42%;
+}
+
+.how3{
+  position:absolute;
+  margin-top: 220px;
+  margin-left:65%;
+}
+
 
 .how-content a:hover {color: #a2836bff;}
 
@@ -65,7 +98,7 @@ body{
   padding-left:15%;
   padding-right:15%;
   text-align:center;
-  margin-top:50%;
+  margin-top:60%;
   border-radius:50%;
   font-size: 26px;
   font-family: 'Barlow Condensed';
@@ -92,14 +125,51 @@ body{
   transition: 0.5s;
 }
 
-.why-content a {
+.why1, .why2, .why3, .why4{
+  width:220px;
+  height:220px;
+  padding:20px;
   color: white;
-  padding: 20px 20px;
+  background-color: transparent;
+  border-radius:50%;
   text-decoration: none;
-  display: inline-block;
+  display: block;
+  border: none;
+  font-family: 'Barlow Condensed';
+  font-size: 22px;
+  text-align: center;
+  line-height:25px;
+  cursor: pointer;
 }
 
-.why-content a:hover {color: #c979c6ff;}
+.why1{
+  position:absolute;
+  margin-top: -230px;
+  margin-left: -190px;
+}
+
+.why2{
+  position:absolute;
+  margin-top: -70px;
+  margin-left: -10px;
+}
+
+.why3{
+  position:absolute;
+  margin-top: 170px;
+  margin-left: -8px;
+}
+
+.why4{
+  position:absolute;
+  margin-top: 340px;
+  margin-left: -190px;
+}
+
+.why1:hover, .why2:hover, .why3:hover, .why4:hover {
+  background-color:#93278fff;
+}
+
 
 .dropdownWhy:hover .why-content {
   display: inline;
