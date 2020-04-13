@@ -2,8 +2,15 @@ h1 {
   font-family: 'Barlow Condensed';
   text-align: left;
   color: #77604eff;
+  margin-top: 40px;
   margin-left:20%;
-  margin-top: 30px;
+  animation-name: titleMove;
+  animation-duration: 1.5s;
+}
+
+@keyframes titleMove {
+  0%   {opacity: 20%; margin-left: 19%;}
+  100% {opacity: 100%; margin-left: 20%;}
 }
 
 p.description {
@@ -11,8 +18,15 @@ p.description {
   text-align: left;
   color: #77604eff;
   margin-top:-10px;
-  margin-left:20%;
   opacity: 0.5;
+  margin-left:20%;
+  animation-name: descriptionMove;
+  animation-duration: 1.5s;
+}
+
+@keyframes descriptionMove {
+  0%   {opacity: 0%; margin-left: 19%;}
+  100% {opacity: 50%; margin-left: 20%;}
 }
 
 .how{
