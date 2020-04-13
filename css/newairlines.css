@@ -82,12 +82,14 @@ p.instruction {
   display: block;
 }
 
-.how-content a:focus {background-color: #a2836bff;}
-
 .how-content a:hover {background-color: #a2836bff;}
 
 .dropdownHow:hover .how-content {
   display: block;
+}
+
+.dropdownHow:hover .how-content a:focus {
+  background-color: #a2836bff;
 }
 
 .dropdownHow:hover .howbutton {
