@@ -5,7 +5,7 @@ h1 {
   margin-top: 40px;
   margin-left:20%;
   animation-name: titleMove;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 @keyframes titleMove {
@@ -21,7 +21,7 @@ p.description {
   opacity: 0.5;
   margin-left:20%;
   animation-name: descriptionMove;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 @keyframes descriptionMove {
