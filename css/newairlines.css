@@ -1,10 +1,16 @@
-
 h1 {
   font-family: 'Barlow Condensed';
   text-align: left;
   color: #93278fff;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left:20%;
+  animation-name: titleMove;
+  animation-duration: 1s;
+}
+
+@keyframes titleMove {
+  0%   {opacity: 20%; margin-left: 19%;}
+  100% {opacity: 100%; margin-left: 20%;}
 }
 
 p.description {
@@ -14,6 +20,13 @@ p.description {
   margin-top:-10px;
   opacity: 0.5;
   margin-left:20%;
+  animation-name: descriptionMove;
+  animation-duration: 1s;
+}
+
+@keyframes descriptionMove {
+  0%   {opacity: 0%; margin-left: 19%;}
+  100% {opacity: 50%; margin-left: 20%;}
 }
 
 p.instruction {
@@ -69,6 +82,13 @@ p.instruction {
   display: block;
 }
 
+.how-content a:focus {
+  background-color: #a2836bff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
 .how-content a:hover {background-color: #a2836bff}
 
 .dropdownHow:hover .how-content {
@@ -119,6 +139,13 @@ padding-right:40%;
 
 .why-content a {
   color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.why-content a:focus {
+  background-color: #b751b5ff;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
