@@ -10,6 +10,13 @@ h1 {
   color: #93278fff;
   margin-top: 40px;
   margin-left:20%;
+  animation-name: titleMove;
+  animation-duration: 1.5s;
+}
+
+@keyframes titleMove {
+  0%   {opacity: 20%; margin-left: 19%;}
+  100% {opacity: 100%; margin-left: 20%;}
 }
 
 p.description {
@@ -19,6 +26,13 @@ p.description {
   margin-top:-10px;
   opacity: 0.5;
   margin-left:20%;
+  animation-name: descriptionMove;
+  animation-duration: 1.5s;
+}
+
+@keyframes descriptionMove {
+  0%   {opacity: 0%; margin-left: 19%;}
+  100% {opacity: 50%; margin-left: 20%;}
 }
 
 p.instruction {
