@@ -1,0 +1,159 @@
+body{
+  background-image:url("https://i.ibb.co/XXgzSRC/shawn-ang-Af-RO2-JMmha-A-unsplash-20opacity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Barlow Condensed';
+  text-align: left;
+  color: #93278fff;
+  margin-top: 40px;
+  margin-left:20%;
+}
+
+p.description {
+  font-family: 'Barlow Condensed';
+  text-align: left;
+  color: #93278fff;
+  margin-top:-10px;
+  opacity: 0.5;
+  margin-left:20%;
+}
+
+p.instruction {
+  font-family: 'Barlow Condensed';
+  text-align: center;
+  color: #9E9E9E;
+  margin-top:20px;
+  
+  margin-left:50px;
+  opacity:0.9;
+}
+
+.how{
+  margin-left:20px;
+}
+.why{
+  margin-top:10%;
+  margin-left:20px;
+}
+.howbutton {
+  background-color: #77604eff;
+  color: white;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
+  font-weight: 600px;
+  border: none;
+  cursor: pointer;
+  
+  
+}
+
+.dropdownHow {
+  position: relative;
+  display: inline-block;
+}
+
+.how-content {
+  display: none;
+  position: absolute;
+  background-color: #77604eff;
+  font-family: 'Barlow Condensed';
+  font-weight: 400px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.how-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.how-content a:hover {background-color: #a2836bff}
+
+.dropdownHow:hover .how-content {
+  display: block;
+}
+
+.dropdownHow:hover .howbutton {
+  background-color: white;
+  color: #77604eff;
+}
+
+p.how{
+color:#77604eff;
+font-family: 'Barlow Condensed';
+margin-top:5px;
+margin-left: 10px;
+padding-right:40%;
+font-size: 17px;
+}
+
+.whybutton {
+  background-color: #93278fff;
+  color: white;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-family: 'Barlow Condensed';
+  font-weight: 600px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.dropdownWhy {
+  position: relative;
+  display: inline-block;
+}
+
+.why-content {
+  display: none;
+  position: absolute;
+  background-color: #93278fff;
+  font-family: 'Barlow Condensed';
+  font-weight: 400px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.why-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.why-content a:hover {background-color: #b751b5ff}
+
+.dropdownWhy:hover .why-content {
+  display: block;
+}
+
+.dropdownWhy:hover .whybutton {
+  background-color: white;
+  color: #93278fff;
+}
+
+p.why{
+color:#93278fff;
+font-family: 'Barlow Condensed';
+margin-top:5px;
+margin-left: 10px;
+padding-right:40%;
+font-size: 17px;
+}
+
+.tableauPlaceholder {
+  border: none; 
+  position: absolute; 
+  margin-left:19%; 
+  margin-top:-380px;
+}
