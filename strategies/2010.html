@@ -30,6 +30,22 @@
 .tooltipster-sidetip.tooltipster-borderless
 .tooltipster-content{color:#93278fff; padding:8px 20px; font-family:'Barlow Condensed'; font-size: 18px; line-height: 23px;}
 
+.regions{
+  margin-top: 80px;
+}
+
+.yearHeader{
+color: white;
+background-color:#93278fff;
+position: absolute;
+font-size:22px;
+border: none;
+font-family: 'Barlow Condensed';
+padding: 5px 20px;
+display: inline-block;
+margin: -60px 430px 20px;
+letter-spacing:2px;
+}
 
 .year{
 color: #b751b5ff;
@@ -40,21 +56,36 @@ border: none;
 font-family: 'Barlow Condensed';
 padding: 10px 35px;
 display: inline-block;
-margin-left:10px;
+margin-left:20px;
+margin-top: 20px;
 }
 
 .year:hover{
   color:#93278fff;
 }
 
-.year:focus{
-color: white;
-background-color: #b751b5ff;
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  padding: 25px;
+  margin-left: 1050px;
+  color:#93278fff;
+  font-weight: bold;
+  font-size: 80px;
+  border-radius: 6px 0 0 6px;
+  user-select: none;
+  -webkit-user-select: none;
 }
+
 </style>
 </head>
 
 <body>
+  <div class = "yearHeader">2010</div>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class = "regions">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="900px">
   <defs>
     <style>
@@ -235,6 +266,7 @@ Collaborated with Turkish Airlines on networking events and trade shows in Singa
 </svg>
 <img src ="https://i.ibb.co/tLMVJHP/Changi.png" style="position:absolute; width:180px; padding-right: 100px;"class="tooltip" title="<p style='color:#424242'><b>Changi Airport Growth Initiative (CAGi)</b><br>Incentivising airlines to drive the growth of Changi’s connectivity and traffic.<br><br>
 <i>Jetstar made Changi its largest hub in Asia, increasing flight frequencies and destinations.</i></p>">
+</div>
 
 <div class="buttons">
 <button class = "year" onclick="currentSlide(1)">2010</button>
