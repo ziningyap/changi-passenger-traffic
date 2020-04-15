@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.buttons{
+margin-top:20px;
+}
+
+.year{
+color: #a2836b;
+background-color:white;
+position: relative;
+font-size:20px;
+border: none;
+font-family: 'Barlow Condensed';
+padding: 5px 80px;
+display: inline-block;
+}
+
+.year:hover{
+color: #77604eff;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 25px;
+  margin-left: 950px;
+  color:#77604eff;
+  font-weight: bold;
+  font-size: 80px;
+  border-radius: 6px 0 0 6px;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next:hover {
+ color:#a2836b;
+
+</style>
+</head>
+
+
+<body>
+
+<div class="container">
+  <div class="mySlides">
+    <img src="https://i.ibb.co/106gZK9/2000.png" style="width:1000px; margin-top:50px;">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.ibb.co/ZVD6FkC/2005.png" style="width:1000px; margin-top:50px;">
+  </div>
+
+  <div class="mySlides">
+    <img src="https://i.ibb.co/mRhqT9W/2010.png" style="width:1000px; margin-top:50px;">
+  </div>
+    
+  <div class="mySlides">
+    <img src="https://i.ibb.co/jGpDtSr/2015.png" style="width:1000px; margin-top:50px;">
+  </div>
+  
+  <div class="mySlides">
+    <img src="https://i.ibb.co/yFXhNky/2019.png" style="width:1000px; margin-top:50px;">
+  </div>
+</div>
+
+<div class="buttons">
+<button class = "year" onclick="currentSlide(1)">2000</button>
+<button class = "year" onclick="currentSlide(2)">2005</button>
+<button class = "year" onclick="currentSlide(3)">2010</button>
+<button class = "year" onclick="currentSlide(4)">2015</button>
+<button class = "year" onclick="currentSlide(5)">2019</button>
+<div>
+
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+  <script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+</body>
+</html>
