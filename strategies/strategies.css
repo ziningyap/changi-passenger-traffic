@@ -21,7 +21,8 @@
 .tooltipster-content{color:#93278fff; padding:8px 20px; font-family:'Barlow Condensed'; font-size: 18px; line-height: 23px;}
 
 .regions{
-  margin-top: 80px;
+  margin-top: 50px;
+  margin-left: -20px;
 }
 
 .yearHeader{
@@ -46,7 +47,7 @@ border: none;
 font-family: 'Barlow Condensed';
 padding: 10px 35px;
 display: inline-block;
-margin-left:20px;
+margin-left:10px;
 margin-top: 20px;
 }
 
@@ -55,13 +56,13 @@ margin-top: 20px;
   cursor: pointer;
 }
 
-.next {
+a.next {
   cursor: pointer;
   position: absolute;
   top: 35%;
   width: auto;
-  padding: 25px;
-  margin-left: 1050px;
+  padding: 5px;
+  margin-left: 1020px;
   color:#93278fff;
   font-weight: bold;
   font-size: 80px;
@@ -70,6 +71,6 @@ margin-top: 20px;
   -webkit-user-select: none;
 }
 
-.next:hover {
+a.next:hover {
     color: #b751b5ff;
 }
