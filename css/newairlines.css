@@ -18,7 +18,6 @@ p.description {
   text-align: left;
   color: #93278fff;
   margin-top:-10px;
-  opacity: 0.5;
   margin-left:20%;
   animation-name: descriptionMove;
   animation-duration: 1.5s;
