@@ -2,7 +2,6 @@
   opacity:1 !important;
 }
 
-
 h1 {
   font-family: 'Barlow Condensed';
   text-align: left;
@@ -78,6 +77,8 @@ p.description {
 }
 
 .how-content a:hover {background-color: #a2836bff}
+
+.how-content a.active:hover {background-color: #a2836bff}
 
 .dropdownHow:hover .how-content {
   display: block;
