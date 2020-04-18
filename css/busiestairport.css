@@ -1,6 +1,7 @@
 .fa-chevron-circle-left:hover{
-  color:white;
+  opacity:1 !important;
 }
+
 
 h1 {
   font-family: 'Barlow Condensed';
