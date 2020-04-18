@@ -1,6 +1,9 @@
 body{
   background-image:url("https://i.ibb.co/RSwyHKJ/ctug18-0221-kinetic-rain-darker.jpg")
 }
+
+button:focus {outline:0;}
+
 .dropdownHow {
   position: absolute;
   display: inline-block;
@@ -55,6 +58,7 @@ body{
   line-height:25px;
   cursor: pointer;
 }
+
 
 .how1:hover, .how2:hover, .how3:hover {
   background-color:#77604eff;
