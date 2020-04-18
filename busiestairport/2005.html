@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-
-	.side:hover{
-	filter: brightness(0.9);
-	}
-
-
-	h1 {
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h1 {
 	  font-family: 'Barlow Condensed';
 	  font-weight:500;
 	  text-align: left;
@@ -17,8 +12,8 @@
 	  margin-left:650px;
 	  opacity:0.5;
 		}
-
-	.white{
+        
+.white{
 		background-color: white;
 		width:800px;
 		padding: 0px 30px;
@@ -27,26 +22,97 @@
 		margin-left: -10px;
 	}
 
-	</style>
+.top {
+	position:absolute; 
+	margin-left: 880px; 
+	margin-top: 10px;
+    width: 280px;
+}
+
+.middle {
+	position:absolute; 
+	margin-left: 880px; 
+    margin-top: 220px;
+    width: 280px;
+}
+
+.bottom {
+	position:absolute; 
+	margin-left: 880px; 
+    margin-top: 430px;
+    width: 280px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s;
+  background-color: #77604eff;
+}
+
+.top:hover .overlay, .middle:hover .overlay, .bottom:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.text {
+	font-family: 'Barlow Condensed';
+	font-weight:500;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+</style>
 </head>
-
 <body>
-
 <div class="white">
-<h1>2005 — 2009</h1>
+	<h1>2005 — 2009</h1>
 <img src= "https://i.ibb.co/Np1yBpF/GIF-2005-2009.gif" width=800px style = "margin-top: 50px;">
 </div>
 
-<a class="side" title="2000 — 2004" href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2000">
-	<img src= "https://i.ibb.co/4mNWMyS/GIF-2000-2004.gif" width=280px style="position:absolute; margin-left: 880px; margin-top: 10px;">
+<a href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2000">
+<div class="top">
+  <img src="https://i.ibb.co/4mNWMyS/GIF-2000-2004.gif" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">2000 — 2004</div>
+  </div>
+</div>
 </a>
 
-<a class="side" title="2010 — 2014" href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2010">
-	<img src= "https://i.ibb.co/sPhcNhW/GIF-2010-2014.gif" width=280px style="position:absolute; margin-left: 880px; margin-top: 220px;">
+<a href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2010">
+<div class="middle">
+  <img src="https://i.ibb.co/sPhcNhW/GIF-2010-2014.gif" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">2010 — 2014</div>
+  </div>
+</div>
 </a>
 
-<a class="side" title="2015 — 2018" href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2015">
-	<img src= "https://i.ibb.co/F8ZQj77/GIF-2015-2018.gif" width=280px style="position:absolute; margin-left: 880px; margin-top: 430px;">
+<a href="https://ziningyap.github.io/changi-passenger-traffic/busiestairport/2015">
+<div class="bottom">
+  <img src="https://i.ibb.co/F8ZQj77/GIF-2015-2018.gif" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">2015 — 2018</div>
+  </div>
+</div>
 </a>
 
 </body>
