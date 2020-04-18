@@ -78,8 +78,6 @@ p.description {
 
 .how-content a:hover {background-color: #a2836bff}
 
-.how-content a.active:hover {background-color: #a2836bff}
-
 .dropdownHow:hover .how-content {
   display: block;
 }
