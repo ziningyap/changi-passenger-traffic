@@ -2,6 +2,13 @@
   opacity:1 !important;
 }
 
+svg {
+  fill: #93278fff;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
 h1 {
   font-family: 'Barlow Condensed';
   text-align: left;
