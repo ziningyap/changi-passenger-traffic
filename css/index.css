@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -15,15 +16,11 @@ h1 {
   font-size: 2rem;
 }
 
-div#main {
-  opacity: 0;
-  display: none;
-}
-
 @media screen and (max-width: 1000px) {
-  div#main {
+  div.main {
     opacity: 0;
     display: none;
+    overflow: hidden;
   }
 
   div#mobile {
@@ -32,13 +29,18 @@ div#main {
   }
 }
 
+.main {
+  opacity: 1;
+  display: block;
+}
+
 .head {
   padding: 5% 5%;
 }
 
 #mobile {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
   position: absolute;
